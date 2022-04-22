@@ -1,0 +1,55 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="@VHTBgrIuv5b*};1mX%1">Contact</variable></variables><block type="pxt-on-start" id="gr1?$E0ub`txTbv(tFlb" x="503" y="-513"><statement name="HANDLER"><block type="device_show_leds" id="3]7QmdswXzk1fJ8wqWYF"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . # . . 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="device_show_leds" id="a3J;Wf|=o7NC=^A/b0j0"><field name="LEDS">`
+        . . . . . 
+        . . # . . 
+        . # . # . 
+        . . # . . 
+        . . . . .
+        `</field><next><block type="device_show_leds" id="aVG(/:/5,XhB)e!HV7]7"><field name="LEDS">`
+        . . # . . 
+        . # . # . 
+        # . . . # 
+        . # . # . 
+        . . # . .
+        `</field><next><block type="device_show_leds" id="J6De,4i?dPOPy8eeV]U3"><field name="LEDS">`
+        . # . # . 
+        # . . . # 
+        . . . . . 
+        # . . . # 
+        . # . # .
+        `</field><next><block type="device_show_leds" id="jJwiB-:{m#@TBnVyvi*z"><field name="LEDS">`
+        # . . . # 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        # . . . #
+        `</field></block></next></block></next></block></next></block></next></block></statement></block><block type="device_button_event" id="X`)oLS%r;0S`zUab~zD$" x="-384" y="-2"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="controls_if" id="mo?SDn)~pjt6umDvF8}%"><mutation else="1"/><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="9RNR:DPtt{9)gQP{/@1w"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="b4C98%#n{+{.8(gKU-mj"><field name="VAR" id="@VHTBgrIuv5b*};1mX%1">Contact</field></block></value><value name="B"><shadow type="math_number" id="I8HvF]4O0nkkx2sO{z]9"><field name="NUM">1</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="FTW?I~LhlE13fH/?)83t"><field name="LEDS">`
+        . . # . . 
+        . # . # . 
+        # . . . # 
+        . # . # . 
+        . . # . .
+        `</field><next><block type="device_set_analog_pin" id="`nFU$37Z)Dgb,YDht?*/"><field name="name">AnalogPin.P0</field><value name="value"><shadow type="math_number_minmax" id="~zQeg5lsu@])MH`g=]?_"><mutation min="0" max="1023" label="Number" precision="0"/><field name="SLIDER">10</field></shadow></value><next><block type="device_set_analog_pin" id="h;(m=dSVc5=^WnHw^YUg"><field name="name">AnalogPin.P1</field><value name="value"><shadow type="math_number_minmax" id="F6g5wp0DY:k=Cwvsm74y"><mutation min="0" max="1023" label="Number" precision="0"/><field name="SLIDER">100</field></shadow></value><next><block type="device_pause" id="dsNR6G(cRIF?08018hDZ"><value name="pause"><shadow type="math_number" id="P]Q25Rh1CBlnh35c|_Qb"><field name="NUM">50</field></shadow></value></block></next></block></next></block></next></block></statement><statement name="ELSE"><block type="device_show_leds" id="#*PG6iqE-!ho$r+4@bYq"><field name="LEDS">`
+        . . # . . 
+        . # # # . 
+        # # # # # 
+        . # # # . 
+        . . # . .
+        `</field><next><block type="device_set_analog_pin" id="p~tk6yrJy|ClMT8OL:GU"><field name="name">AnalogPin.P0</field><value name="value"><shadow type="math_number_minmax" id="%q!fjXUlc|WU:pZa!+lQ"><mutation min="0" max="1023" label="Number" precision="0"/><field name="SLIDER">100</field></shadow></value><next><block type="device_set_analog_pin" id=".(DZe/6zro2^6Z9Qyr7/"><field name="name">AnalogPin.P1</field><value name="value"><shadow type="math_number_minmax" id="yguA,UUN(0V^3_#Z^7V!"><mutation min="0" max="1023" label="Number" precision="0"/><field name="SLIDER">10</field></shadow></value><next><block type="device_pause" id="T@qQ#)yu94h7?G3dn#6c"><value name="pause"><shadow type="math_number" id="?m:D4py5n$FEZi#!ehdC"><field name="NUM">500</field></shadow></value><next><block type="device_set_analog_pin" id=":e$#cNcaouL8NZBg_k6n"><field name="name">AnalogPin.P0</field><value name="value"><shadow type="math_number_minmax" id="{DW::Z+)^PXQm1}NBxS4"><mutation min="0" max="1023" label="Number" precision="0"/><field name="SLIDER">10</field></shadow></value><next><block type="device_set_analog_pin" id="pKfP_v096PD,)h.hT!=m"><field name="name">AnalogPin.P1</field><value name="value"><shadow type="math_number_minmax" id="HAIXN5,tAZSXDx)yxC{1"><mutation min="0" max="1023" label="Number" precision="0"/><field name="SLIDER">10</field></shadow></value><next><block type="device_pause" id="9DVTd4rf2C/wj[fZ6Y50"><value name="pause"><shadow type="math_number" id="OJou;z;-N?T5D}WfRRSm"><field name="NUM">500</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></statement></block><block type="device_forever" id="Wc8Lm%.mnP]k|MQwrNV," x="38" y="44"><statement name="HANDLER"><block type="variables_set" id="8:5).;8+Dt1mh4CZs6~Y"><field name="VAR" id="@VHTBgrIuv5b*};1mX%1">Contact</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_get_digital_pin" id="V1A:?xmhAnP[gQ`zLrtA"><field name="name">DigitalPin.P2</field></block></value><next><block type="controls_if" id="f.w1T;]f,R`CCnqiQ3t#"><mutation else="1"/><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="~t,;JN2z##tFO~L~eOG9"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="$czQygNl7~I0jrYzU]M0"><field name="VAR" id="@VHTBgrIuv5b*};1mX%1">Contact</field></block></value><value name="B"><shadow type="math_number" id="o{$kNw=+9I!8E7kTB1zG"><field name="NUM">1</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="oZhKdF8x-/#y)~H2N)Ha"><field name="LEDS">`
+        . . # . . 
+        . # # # . 
+        # # # # # 
+        . # # # . 
+        . . # . .
+        `</field><next><block type="device_set_analog_pin" id="sLt2h5:p.cHxay_bENW5"><field name="name">AnalogPin.P0</field><value name="value"><shadow type="math_number_minmax" id="OGlZjR};y^#cZ[hq}1=4"><mutation min="0" max="1023" label="Number" precision="0"/><field name="SLIDER">100</field></shadow></value><next><block type="device_set_analog_pin" id="p,i3Syk]3|{e$NDmgp_t"><field name="name">AnalogPin.P1</field><value name="value"><shadow type="math_number_minmax" id="f0`SRSBjsihh_?5Rl}|!"><mutation min="0" max="1023" label="Number" precision="0"/><field name="SLIDER">10</field></shadow></value><next><block type="device_pause" id="!pxMMD=t%2le(gw:w+[+"><value name="pause"><shadow type="math_number" id="5}hZL!^79F-)G9/Q~cS9"><field name="NUM">500</field></shadow></value><next><block type="device_set_analog_pin" id="{K6PBnAJ[Cc,|7mvEm,1"><field name="name">AnalogPin.P0</field><value name="value"><shadow type="math_number_minmax" id="D?V$sLSznM|.m{GyFmd@"><mutation min="0" max="1023" label="Number" precision="0"/><field name="SLIDER">10</field></shadow></value><next><block type="device_set_analog_pin" id="gc)2xnlrkhGmDt1%UQVR"><field name="name">AnalogPin.P1</field><value name="value"><shadow type="math_number_minmax" id="$RQwEClA_za(cp-}EjI7"><mutation min="0" max="1023" label="Number" precision="0"/><field name="SLIDER">10</field></shadow></value><next><block type="device_pause" id="cNT9o(Hby,1by#4+$ckI"><value name="pause"><shadow type="math_number" id="_65A.z95Irc`u+n3=UN;"><field name="NUM">500</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></statement><statement name="ELSE"><block type="device_show_leds" id="$eTU$?YV5G:WfbaH*h#%"><field name="LEDS">`
+        . . # . . 
+        . # . # . 
+        # . . . # 
+        . # . # . 
+        . . # . .
+        `</field><next><block type="device_set_analog_pin" id="I.2B|DBmv$YCq55$$rgs"><field name="name">AnalogPin.P0</field><value name="value"><shadow type="math_number_minmax" id="HQ)RwU^2=N:}vZoGB^Xm"><mutation min="0" max="1023" label="Number" precision="0"/><field name="SLIDER">10</field></shadow></value><next><block type="device_set_analog_pin" id="NPSI~mnAhmSjmgn3X`#."><field name="name">AnalogPin.P1</field><value name="value"><shadow type="math_number_minmax" id="0QZAwGt.,//d9%n[ik81"><mutation min="0" max="1023" label="Number" precision="0"/><field name="SLIDER">100</field></shadow></value><next><block type="device_pause" id="$1Th=okn#ycME(ma_dM#"><value name="pause"><shadow type="math_number" id="d)}p?a0ij)R7PezA#.u0"><field name="NUM">50</field></shadow></value></block></next></block></next></block></next></block></statement></block></next></block></statement></block></xml>
